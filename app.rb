@@ -8,10 +8,10 @@ require "./models"
 require "pry"
 
 enable :sessions
-set :database, "sqlite3:app.db"
+
 
 configure :development do
-    set :database, "sqlite3:[name of database file]"
+    set :database, "sqlite3:app.db"
 end
   
   # this will ensure this will only be used on production

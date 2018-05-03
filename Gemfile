@@ -6,8 +6,9 @@ gem 'sinatra-flash'
 gem 'activerecord'
 gem 'sinatra-contrib'
 gem 'rake'
-
 gem 'pry'
+
+ruby '2.5.1'
 
 
 group :development do
