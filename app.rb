@@ -10,6 +10,16 @@ require "pry"
 enable :sessions
 set :database, "sqlite3:app.db"
 
+configure :development do
+    set :database, "sqlite3:[name of database file]"
+end
+  
+  # this will ensure this will only be used on production
+configure :production do
+    # this environment variable is auto generated/set by heroku
+    #   check Settings > Reveal Config Vars on your heroku app admin panel
+    set :database, ENV["DATABASE_URL"]
+end
 
 get "/" do
     if session[:user_id]
@@ -99,3 +109,13 @@ post "/post" do
     redirect "/signed_in_homepage"
 end
 
+get "/users" do
+    @users = User.all
+    erb :users
+
+end
+
+get "/profile/:id" do
+    params[:id]
+    erb :profile
+end
