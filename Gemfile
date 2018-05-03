@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'sinatra'
+gem 'sinatra-activerecord'
+gem 'sinatra-flash'
 gem 'activerecord'
-gem "sinatra-flash"
 gem 'sqlite3'
 gem 'sinatra-contrib'
-gem 'csv'
 gem 'rake'
 
-# gem 'pry'
+gem 'pry'
