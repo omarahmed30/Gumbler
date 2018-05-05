@@ -1,5 +1,22 @@
-<ul>
-    <%= @users.each do |user| %>
-        <li> <a href="profile/<% user.id %>"><%= user.username %> </a> </li>
+<div class="layout">
+
+    <h1> <%= @user.firstname %>&#39s Page </h1>
+    <% @user.posts.all.reverse.each do |p| %>
+        <br>
+        <h2> <%= p.title %> </h2>
+        <h3> <%= p.post_content %> </h3>
+        <br>
+        <img style="width:500px; height: 400px;" src ="<%= p.image %>" >
+        <br><br>
+        <a href="/delete_a_post" class="btn btn-primary" >Delete This Post</a>
+        <br><br>
     <% end %>
-</ul>
+    <br><br><br>
+    <% if (@user.posts.all.count >= 2) %>
+        <a href="/delete_all_post" class="btn btn-primary" >Delete All Posts</a>
+    <% end %>
+    <a href="/delete_user" class="btn btn-primary" >Delete User</a>
+  
+</div>
+         
+    

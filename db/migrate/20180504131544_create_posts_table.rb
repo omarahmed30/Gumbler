@@ -4,6 +4,7 @@ class CreatePostsTable < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :post_content
       t.integer :user_id
+      t.string :image
       t.datetime :created_at
       t.datetime :updated_at
     end

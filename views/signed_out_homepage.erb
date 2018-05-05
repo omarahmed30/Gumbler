@@ -3,9 +3,14 @@
     <h2 > Please sign up or sign in to post a blog</h2>
     <a  href="/sign_up" class="btn btn-primary">Sign Up</a> 
     <a  href="/sign_in" class="btn btn-primary">Sign In</a>
+
+    <br>
+    <br>
+
+    <% @posts.all.reverse.each do |p| %>
+        <h2> <%= p.title %> </h2>
+        <h3> <%= p.post_content %> </h3>
+        <br>
+        <img src ="<%= p.image %>" >
+    <% end %>
 </div>
-
-
-
-
-

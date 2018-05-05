@@ -8,19 +8,26 @@
   <form class = "main-content" id = "form" action="/post" method="POST">
     <br>
     <div class="form-group">
-        <label for="exampleFormControlTextarea1"></label>
-        <input type = "text"  id="exampleFormControlTextarea1" size="60" name = "title" placeholder="Enter Post Title ">
+        <label for="title"></label>
+        <input type = "text"  id="title" size="60" name = "title" placeholder="Enter Post Title" required>
     </div>
     <br>
 
     <div class="form-group">
-      <label for="exampleFormControlTextarea1"></label>
-      <textarea type = "email"  id="exampleFormControlTextarea1" rows="6" cols = "80" name = "post_content" placeholder="Post content here... "></textarea>
+        <label for="image"></label>
+        <input type = "text"  id="image" size="60" name = "image" placeholder="Enter image url">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="post_content"></label>
+      <textarea type = "email"  id="post_content" rows="6" cols = "80" name = "post_content" placeholder="Post content here... " required></textarea>
     </div>
     <br>
 
     <div class="col-auto my-1">
       <button type="submit" class="btn btn-primary" name = "submit">Submit</button>
+      <a href="/users" class="btn btn-primary">Cancel</a>
     </div>
   </form>
 </div>
