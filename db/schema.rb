@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_04_131544) do
+ActiveRecord::Schema.define(version: 2018_05_06_172407) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2018_05_04_131544) do
     t.string "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string "author_name"
   end
 
   create_table "users", force: :cascade do |t|
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 2018_05_04_131544) do
     t.datetime "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string "nick_name"
   end
 
 end

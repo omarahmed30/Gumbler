@@ -2,21 +2,30 @@
 
     <h1> <%= @user.firstname %>&#39s Page </h1>
     <% @user.posts.all.reverse.each do |p| %>
-        <br>
-        <h2> <%= p.title %> </h2>
-        <h3> <%= p.post_content %> </h3>
-        <br>
-        <img style="width:500px; height: 400px;" src ="<%= p.image %>" >
         <br><br>
-        <a href="/delete_a_post" class="btn btn-primary" >Delete This Post</a>
+        
+        <h2> <%= p.title %> </h2>
+        <p> Created <%= p.created_at.strftime(" %m/%d/%Y") %> <%= p.created_at.strftime("at %l:%M%p") %> </p>
+        <br>
+        <% if !(p.image.empty?) %>
+        <img  src ="<%= p.image %>" >
+        <br>
+        <% end %>
+        <br>
+        <p> <%= p.post_content %> </p>
+        <br>
+        <a  href="/delete_a_post/<%=p.id%>" class="btn btn-primary" >x</a>
+        <br>
+      
+        
         <br><br>
     <% end %>
     <br><br><br>
     <% if (@user.posts.all.count >= 2) %>
         <a href="/delete_all_post" class="btn btn-primary" >Delete All Posts</a>
     <% end %>
-    <a href="/delete_user" class="btn btn-primary" >Delete User</a>
-  
+    <a href="/delete_user" class="btn btn-primary" >Delete Account</a>
+    <br><br><br>
 </div>
          
     

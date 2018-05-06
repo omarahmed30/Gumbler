@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 
-body {
+html, body {
   /* font-family: 'Do Hyeon', sans-serif; */
   font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  height: 100%;
+  color: rgb(238, 231, 231);
+}
+body {
+  min-height: 100%;
+  background-color: rgb(37, 4, 37);
 }
 
 ul {
@@ -62,9 +69,9 @@ ul {
   position: absolute;
   top: 50%;
   left: 35%;
-  width: 600px;
-  height: 600px;
-  margin: -100px 0 0 -100px;
+  width: 700px;
+  
+  margin: -110px 0 0 -110px;
 }
 
 .sign-up {
@@ -72,6 +79,41 @@ ul {
 }
   
 img {
-  width: 400px;
+  width: 500px;
   height: 400px;
+  border-radius: 2%;
+}
+
+.right a {
+  float: right;
+  font-size: 36px; 
+  
+  padding-left: 20px;
+  text-decoration: none;
+  
+}
+
+.right a:hover {
+  color: #7cee7c;
+}
+
+ .left {
+  font-size: 48px;
+  margin-left: 50px;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-right: 40px;
+  
+}
+.sign-in {
+  background-color: rgb(37, 4, 37);
+  color: rgb(228, 217, 217);
+  height: 100%;
+}
+
+.welcome {
+  font-size: 50px;
+  padding: 100px;
 }

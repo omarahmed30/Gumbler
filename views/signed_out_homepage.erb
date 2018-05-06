@@ -1,16 +1,32 @@
-<div class = "layout">
-    <h1> Welcome to The Blog </h1>
-    <h2 > Please sign up or sign in to post a blog</h2>
-    <a  href="/sign_up" class="btn btn-primary">Sign Up</a> 
-    <a  href="/sign_in" class="btn btn-primary">Sign In</a>
 
-    <br>
-    <br>
+<div class="logo">
+    <span class="left">
+         Video Games Blog 
+    </span>
+
+    <span class="right">
+        <a  href="/sign_up" >Sign Up</a> 
+        <a  href="/sign_in" >Sign In</a>
+    </span>
+</div>
+
+<div class = "layout">
+    <h1 class="welcome"> Welcome to The Blog </h1>
+    <h2 > Please sign up or sign in to post a blog</h2>
+    <br><br><br>
 
     <% @posts.all.reverse.each do |p| %>
-        <h2> <%= p.title %> </h2>
-        <h3> <%= p.post_content %> </h3>
+        <h2> Title: <%= p.title %> </h2>
+        <p> Created <%= p.created_at.strftime(" %m/%d/%Y") %> <%= p.created_at.strftime("at %l:%M%p") %> </p>
+        <p> <%= p.post_content %> <p>
         <br>
+        <% if (p.image.empty?) %>
+            <% next %>
+        <% else %>
         <img src ="<%= p.image %>" >
+        <br><br>
+        <hr style="border-color:white;"
+        <br><br><br>
+        <% end %>
     <% end %>
 </div>

@@ -44,11 +44,11 @@ post "/sign_up" do
       birthday: params[:birthday]
     )
   
-    # this line doe
-  
+    # this line does the signing in
+    session[:user_id] = @user.id
     # lets the user know they have signed up
     flash[:info] = "Thank you for signing up"
-    session[:user_id] = @user.id
+    
     # assuming this page exists
     redirect "/users"
 end
@@ -152,10 +152,14 @@ get "/delete_all_post" do
 	redirect "/users"
 end
 
-get "/delete_a_post" do
+get "/delete_a_post/:id" do
     if session[:user_id]
-        Post.find_by(user_id: session[:user_id]).destroy()
+        
+        post = Post.find(params[:id])
+        Post.destroy(post.id)
         
     end
 	redirect "/users"
 end
+
+# Post.find_by(user_id: session[:user_id]).destroy()
