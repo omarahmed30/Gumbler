@@ -1,22 +1,17 @@
-
-<div class="logo">
-    <span class="left">
-         Video Games Blog 
-    </span>
-
+<div class="navbar-margin-right">
     <span class="right">
         <a  href="/sign_up" >Sign Up</a> 
         <a  href="/sign_in" >Sign In</a>
     </span>
-</div>
 <div>
-<img id="main-image" src="https://cdn-images-1.medium.com/max/1190/1*bD9nGMBuGWBdawdmrMmzVA.png">
+<img id="main-image" src="http://media.indiedb.com/images/games/1/34/33326/CatapultGifBig.gif">
 </div>
 <div class = "layout">
     <h1 class="welcome"> Welcome to The Blog </h1>
     <h2 > Please sign up or sign in to post a blog</h2>
     <br><br><br>
-
+</div>
+<div class="main-content">
     <% @posts.all.reverse.each do |p| %>
         <h2> Title: <%= p.title %> </h2>
         <p> Created <%= p.created_at.strftime(" %m/%d/%Y") %> <%= p.created_at.strftime("at %l:%M%p") %> </p>
@@ -32,3 +27,6 @@
         <% end %>
     <% end %>
 </div>
+
+
+

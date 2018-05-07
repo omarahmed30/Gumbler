@@ -1,6 +1,12 @@
+<div class="navbar-margin-right">
+    <span class="right ">
+        <a href="/post" >Create</a>
+        <a href="/sign_out" >Sign out</a>
+    </span>
+</div>
+<br><br>
 <div class="layout">
-
-    <h1> <%= @user.firstname %>&#39s Page </h1>
+    <h1> <%= @user.firstname.capitalize %>&#39s Page </h1>
     <% @user.posts.all.reverse.each do |p| %>
         <br><br>
         
@@ -8,17 +14,14 @@
         <p> Created <%= p.created_at.strftime(" %m/%d/%Y") %> <%= p.created_at.strftime("at %l:%M%p") %> </p>
         <br>
         <% if !(p.image.empty?) %>
-        <img  src ="<%= p.image %>" >
-        <br>
-        <% end %>
-        <br>
-        <p> <%= p.post_content %> </p>
-        <br>
-        <a  href="/delete_a_post/<%=p.id%>" class="btn btn-primary" >x</a>
-        <br>
-      
-        
-        <br><br>
+        <img  src ="<%= p.image %>"> <br> 
+
+        <% end %> <br>
+
+        <p> <%= p.post_content %> </p> <br>
+
+        <a  href="/delete_a_post/<%=p.id%>" class="btn btn-primary" >x</a> 
+        <br><br><br>
     <% end %>
     <br><br><br>
     <% if (@user.posts.all.count >= 2) %>
