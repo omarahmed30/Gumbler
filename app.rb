@@ -92,8 +92,10 @@ get "/sign_out" do
 end
 
 get "/post" do
+    if session[:user_id]
     @user = User.find(session[:user_id])
     erb :post
+    end
 end
 
 post "/post" do
