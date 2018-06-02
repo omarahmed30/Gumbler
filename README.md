@@ -5,7 +5,6 @@ This fullstack blog website that enables someone to sign up for an account and c
 https://gumbler.herokuapp.com/
 
 ## Technology used
-![](
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png)
-" width="100px">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png"  width="100px">
