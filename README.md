@@ -5,6 +5,6 @@ This fullstack blog website that enables someone to sign up for an account and c
 https://gumbler.herokuapp.com/
 
 ## Technology used
-![alt text][logo]
+![](https://mikewilliamson.files.wordpress.com/2010/05/rails_on_ruby.jpg =100x100)
 
-[https://mikewilliamson.files.wordpress.com/2010/05/rails_on_ruby.jpg]:  go Title Text 2"
+
