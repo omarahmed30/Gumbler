@@ -6,8 +6,7 @@ https://gumbler.herokuapp.com/
 
 ## Technology used
 
-
-<a href "https://rubyonrails.org/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png"  width="100px"></a>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png"  width="100px">
 
 * Ruby on Rails is an open-source server-seide programing language which helped me made this blog
 
