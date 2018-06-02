@@ -1,4 +1,6 @@
 # Gumbler
+<img width="1256" alt="screen shot 2018-06-02 at 7 50 49 pm" src="https://user-images.githubusercontent.com/26211014/40881795-76cf1768-669e-11e8-92a1-510ec20c0e3b.png">
+
 This fullstack blog website that enables someone to sign up for an account and create posts about their favorite video games and red other people blogs.
 
 
