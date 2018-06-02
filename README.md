@@ -7,4 +7,4 @@ https://gumbler.herokuapp.com/
 ## Technology used
 ![alt text][logo]
 
-[logo]: https://mikewilliamson.files.wordpress.com/2010/05/rails_on_ruby.jpg go Title Text 2"
+[https://mikewilliamson.files.wordpress.com/2010/05/rails_on_ruby.jpg]:  go Title Text 2"
